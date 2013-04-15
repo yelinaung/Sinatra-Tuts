@@ -1,11 +1,12 @@
 require 'sinatra'
 
-get '/:name' do
+#get '/:name' do
     #"Hello, #{params[:name]}!"
 
     # Assue a URL in the form /some_name?foo=XYZ
-    "You asked for #{params[:name]} as well as #{params[:foo]}"
-end
+    #"You asked for #{params[:name]} as well as #{params[:foo]}"
+#end
+
 
 post '/login' do
     username = params[:username]
@@ -18,4 +19,9 @@ put '/users/:id' do
     u.first_name = params[:first_name]
     u.last_name = params[:last_name]
     u.save
+end
+
+# Accepting wildcards
+get '/*' do
+    "You passed in #{params[:splat]}"
 end
