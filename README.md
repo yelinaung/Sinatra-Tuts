@@ -1,4 +1,4 @@
 Sinatra
 =======
 
-Simple Sinatra test
+Sinatra Tutorials from "Sinatra Up and Running"
