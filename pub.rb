@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 
-get '/' do
+get '/public.html' do
     File.read("public.html")
 end
