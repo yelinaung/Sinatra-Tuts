@@ -1,9 +1,13 @@
 require 'sinatra'
 
+# register a new MIME type :plain
 configure do
     mime_type :plain, 'text/plain'
 end
 
+# Set the content type that will be
+# used to render a response for the
+# specific route
 before '/plain' do
     content_type :plain
 end
