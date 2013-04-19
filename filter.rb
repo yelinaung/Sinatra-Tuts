@@ -1,5 +1,8 @@
 require 'sinatra'
 
+# Filtering the requests and responses
+# Both before and after a route
+# has been executed
 before do
     @before_value = 'foo'
 end
