@@ -1,11 +1,13 @@
 require 'sinatra'
 
+# Inline template
 get '/index' do
     erb :index
 end
 
 __END__
 
+# The name of the view must be a symbol
 @@index
 
 <!DOCTYPE html>

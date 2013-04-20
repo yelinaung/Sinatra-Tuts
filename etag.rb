@@ -1,4 +1,6 @@
 require 'sinatra'
+# run 'gem install uuid' if you haven't
+# installed uuid
 require 'uuid'
 
 # Etags = Entity tags

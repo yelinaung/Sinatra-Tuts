@@ -10,6 +10,13 @@ post '/' do
     "Triggered via POST"
 end
 
+# The line between POST and PUT is that
+# how the server should handle the payload
+# if POST, the current URL may handle the
+# payload application.
+# if PUT, the supplied location must be
+# what handles it.
+
 # PUT
 put '/' do
     "Triggered via PUT"
